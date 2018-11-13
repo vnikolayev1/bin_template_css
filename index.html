@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="jquery-3.3.1.min.js"></script>
+
+
+</head>
+<body>
+    <div class="header_grid">
+        <div>
+            <a id="back" href="#back"><</a>
+        </div>
+        <div>
+            <a id ="bin">Корзина <button type="button" id="add_goods">+</button></a>
+        </div>
+        <div>
+            <a href="#clear_bin" id="clear_bin" onclick="clear_bin()">Очистить</a>
+        </div>
+    </div>
+    <div class="orders_grid">
+        <div class = "order" id="order">
+            <div class="goods" id ="duplicater0">
+                <div class="price">
+                    <div class="priceAmount">
+                        110 Грн.
+                    </div>
+                </div>
+                <div class="goods_container">
+                    <div>
+                        <img src="images/soviet_cup.jpg" height="100" width="100"/>
+                    </div>
+                    <div class="goods_filler">
+                        <div>
+                            Граненый стакан для распития алкогольных напитков, в СССР в него наливали водку.
+                        </div>
+                        <div class="goods_id">
+                            Код товара 001<br/>
+                        </div>
+                        <div>
+                            <button type="button" class="minusbutton" id="minus">-</button>
+                            <input type="number" class="goodsamount" value="1" min="1" max="100" id="count">
+                            <button type="button" class="plusbutton" id="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loweritem" id="loweritem">
+            <div>
+                <button type="button" class="orderbutton" onclick="orderLeft()">ОФОРМИТЬ ЗАКАЗ</button>
+            </div>
+    </div>
+	<div class="footer" id="footer">
+        <div>
+			<a href="#orders"><img src="images/orders.png" height="32" width="32" /><div class="caption">Заказы</div></a>
+		</div>
+		<div>
+			<a href="#shop"><img src="images/shop.png" height="32" width="32"/><div class="caption">Магазин</div></a>
+		</div>
+		<div>
+			<a href="#promo"><img src="images/promo2.png" height="32" width="32"/><div class="caption">Акции</div></a>
+		</div>
+		<div>
+			<a href="#cab"><img src="images/cab.png" height="32" width="32"/><div class="caption">Кабинет</div></a>
+		</div>
+	</div>
+    <script src="index.js"></script>
+</body>
+</html>

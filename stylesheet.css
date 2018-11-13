@@ -1,0 +1,103 @@
+body{
+    background-color: rgba(123, 211, 245, 0.5);
+    height: 100%;
+}
+
+
+.header_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#back{
+    margin-left: 20px;
+}
+#clear_bin{
+    margin-left: 15%;
+}
+
+.goods{
+    background-color: whitesmoke;
+    border: 1px solid #BFBFB;
+    box-shadow: -5px 5px 5px 5px #aaaaaa;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    margin: 10px 10px 20px 10px;
+}
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr 7fr;
+}
+.priceAmount{
+    justify-self: start;
+}
+.currency{
+    justify-self: start;
+}
+.goods_container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.goods_filler {
+    display: grid;
+}
+.goods_id{
+    color:#6063ff;
+}
+.minusbutton{
+    border-radius: 50%;
+    border-color: #9571ff;
+    background-color: whitesmoke;
+    color: #9571ff;
+}
+.plusbutton{
+    border-radius: 50%;
+    border-color: #9571ff;
+    background-color: whitesmoke;
+    color: #9571ff;
+}
+.goodsamount{
+    border-radius: 5px;
+    border-color: #9571ff;
+    width: 30px;
+    padding: 3px 3px 3px 3px;
+}
+.loweritem{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.orderbutton{
+    text-align: center;
+    color: #9571ff;
+    background-color: #6cf45b;
+    border-radius: 30px;
+    height: 40px;
+    display:block;
+    position: relative;
+    margin:0 auto;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ece5ff;
+    color: black;
+    text-align: center;
+}
+/* desktop version applies here*/
+@media screen and (min-width: 736px) {
+    .orders_grid {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+        ". order ."
+    }
+    .order{
+        grid-area: order;
+    }
+}
